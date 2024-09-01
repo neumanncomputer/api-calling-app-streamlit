@@ -1,11 +1,10 @@
 {
   "[python]": {
-    // 拡張機能のBlack Formatterを使う場合には必ず指定する
     "editor.defaultFormatter": "ms-python.black-formatter",
-    // ファイルの保存時にフォーマットを自動実行する場合
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
   },
-
-  // 最大文字数などのオプション引数を指定する場合
   "black-formatter.args": ["--line-length=120"]
 }
