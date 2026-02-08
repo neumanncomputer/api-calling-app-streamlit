@@ -1,19 +1,14 @@
 # Streamlit で LLM chat app をつくる
 
-[Build a basic LLM chat app - Streamlit Docs](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)
+[Build a basic LLM chat app - Streamlit Docs](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)を参考に作成
 
-# Requirement
+## Requirement
 
-- Python 3.11
-- poetry 環境
+- [uv](https://docs.astral.sh/uv/)
+- ([Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff))
 
-```bash
-poetry install
-```
-
-# Usage
+## Usage
 
 ```bash
-poetry shell
-streamlit run app.py
+uv run streamlit run app.py
 ```

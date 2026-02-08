@@ -1,15 +1,17 @@
-import streamlit as st
-import pandas as pd
 from io import BytesIO
+
+import pandas as pd
+import streamlit as st
 
 from api_caller import APICaller
 
-
 api_caller = APICaller()
 
-st.header("API実行ツール", divider=True)
+st.header("API実行ツール")
 
-uploaded_file = st.file_uploader("xlsxファイルをアップロードしてください。", type="xlsx")
+uploaded_file = st.file_uploader(
+    "xlsxファイルをアップロードしてください。", type="xlsx"
+)
 
 if uploaded_file is not None:
     results = []
